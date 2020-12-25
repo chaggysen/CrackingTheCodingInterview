@@ -1,11 +1,12 @@
 from LinkedList import LinkedList
 # Write code to remove duplicates from an unsorted linked list
 
-def remove_dups(node):
+
+def remove_dups(linkedlist):
     memo = {}
-    if node is None:
+    if linkedlist.head is None:
         return
-    cur_node = node.head
+    cur_node = linkedlist.head
     memo[cur_node.value] = True
     while cur_node.next:
         if cur_node.next.value in memo:
@@ -14,4 +15,11 @@ def remove_dups(node):
             memo[cur_node.next.value] = True
             cur_node = cur_node.next
 
-    return node
+    return linkedlist
+
+
+ll = LinkedList()
+ll.generate(100, 0, 9)
+print(ll)
+remove_dups(ll)
+print(ll)
