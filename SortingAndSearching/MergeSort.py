@@ -1,3 +1,5 @@
+# its good because its O(nlog(n)). But it uses space complexity O(n). So if we don<t care too much about our space complexity,
+# we can use merge sort. Its also a stable algorithm
 def merge(a, b):
     output = []
     a_idx, b_idx = 0, 0

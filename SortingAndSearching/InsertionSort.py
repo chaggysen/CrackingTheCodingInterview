@@ -1,3 +1,5 @@
+# Use insertion sort when we have small data set or when most of the elements
+# already sorted. It uses O(1) spacew and its easy to implement. It's a stable sorting algorithm
 def insertionSort(array):
     for i in range(1, len(array)):
         while array[i - 1] > array[i] and i > 0:

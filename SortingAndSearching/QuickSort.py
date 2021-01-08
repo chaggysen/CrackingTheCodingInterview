@@ -1,3 +1,5 @@
+# O(nlog(n)). This is the most popular sorting algorithm.One downside is that if we don't
+# pick the pivot correctly, the worst case could be O(n^2). Also this sorting algorithm is not stable
 def quickSort(array):
     if len(array) <= 1:
         return array

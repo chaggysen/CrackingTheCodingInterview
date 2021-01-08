@@ -1,3 +1,4 @@
+# Never use bubble sort its trash
 def bubbleSort(array):
     for i in range(len(array)):
         for j in range(len(array) - 1):

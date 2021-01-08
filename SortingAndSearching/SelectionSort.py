@@ -1,3 +1,4 @@
+# never use selection sort its trash
 def selectionSort(array):
     for i in range(len(array)):
         min = i
