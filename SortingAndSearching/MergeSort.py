@@ -30,6 +30,6 @@ def mergeSort(array):
     return merge(left, right)
 
 
-alist = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+alist = [1, 2]
 newlist = mergeSort(alist)
-print(newlist)
+print(alist)
